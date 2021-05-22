@@ -8,6 +8,7 @@
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
         transition: transform 0.3s ease;
+        z-index: 3;
     }
     .open{
         -webkit-transform: translate(0, 0);
@@ -18,6 +19,7 @@
     }
     .content a{
         color: black;
+        padding: 0;
     }
     .nav_item {
         display: list-item;
@@ -26,12 +28,11 @@
         text-align: left;
     }
 }
-
 @media screen and (min-width: 520px) {
     .nav-responsive{
         display: none;
     }
 }
 
-
+/* daftar restoran */
 

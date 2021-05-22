@@ -10,15 +10,18 @@
 </head>
 
 <body>
+    <!-- skip content -->
+    <a href="#daftar-restoran" class="skip-link">skip content</a>
+
     <!-- navbar -->
     <div class="nav">
         <div class="nav-responsive">
             <a id="menu" class="nav-menu">☰</a>
         </div>
         <div class="content" id="content-responsive">
-            <img src="./images/heros/logo.png" alt="logo">
+            <img src="./images/heros/logo.png" alt="logo" tabindex="0">
             <ul>
-                <li class="nav_item"><a href="#">Home</a></li>
+                <li class="nav_item"><a href="index.html">Home</a></li>
                 <li class="nav_item"><a href="#">Favorite</a></li>
                 <li class="nav_item"><a href="https://www.linkedin.com/in/fadel-muhammad-bb16431b5/" target="_blank">About Us</a></li>
             </ul>
@@ -27,15 +30,20 @@
     
     <!-- hero -->
     <div class="hero">
-        <img src="./images/heros/hero-image_2.jpg" alt="gambar makanan">
+        <img src="./images/heros/hero-image_2.jpg" alt="gambar makanan" tabindex="0">
         <div class="caption">
-            <h1>welcome</h1>
-            <p>nikmati berbagai masakan yang ada di indonesia.</p>
+            <h1 tabindex="0">welcome</h1>
+            <p tabindex="0">nikmati berbagai masakan yang ada di indonesia.</p>
         </div>
     </div>
 
+    <!-- daftar restoran -->
+    <div id="daftar-restoran"></div>
 
-
+    <!-- footer -->
+    <div class="footer">
+        <p tabindex="0">Copyright &#169; 2020 - Hunger Apps</p>
+    </div>
 
 </body>
 

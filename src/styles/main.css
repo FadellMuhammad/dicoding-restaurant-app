@@ -6,6 +6,18 @@
     font-family: 'KoHo', sans-serif;;
 }
 
+/* skip content */
+.skip-link{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: white;
+    z-index: 100;
+}
+.skip-link:focus{
+    top: 0;
+}
+
 /* navbar */
 .nav-menu{
     font-size: 40px;
@@ -37,13 +49,17 @@
 }
 .content a{
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
     color: white;
+    padding: 12px;
 }
 
 /* hero */
 .hero img{
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 .caption{
     position: absolute;
@@ -52,6 +68,7 @@
     right: 30%;
     color: rgb(255, 255, 255);
     text-align: center;
+    z-index: 2;
 }
 .caption h1{
     font-size: 8vw;
@@ -61,3 +78,61 @@
     font-size: 2vw;
     font-weight: 500;
 }
+
+/* daftar restoran */
+#daftar-restoran{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    background-color: rgb(245, 241, 228);
+    border-radius: 10px;
+    margin: 10px;
+    flex-basis: 20%;
+}
+
+.card img{
+    width: 380px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card h6{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+}
+
+.card h5{
+    margin: 10px 20px;
+}
+
+.card h3{
+    margin: 10px 20px;
+}
+
+.card p{
+    margin: 10px 20px;
+    width: 400px;
+    text-align: justify;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(131, 131, 131);
+    width: 100%;
+    height: 70px;
+}
+.footer p{
+    font-weight: 700;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+}
+
