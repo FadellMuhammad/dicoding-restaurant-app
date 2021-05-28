@@ -1,12 +1,12 @@
 /* navbar */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 602px) {
     .content{
         top: 70px;
         margin: 0;
         background-color: white;
         position: absolute;
-        -webkit-transform: translate(-300px, 0);
-        transform: translate(-300px, 0);
+        -webkit-transform: translate(-360px, 0);
+        transform: translate(-360px, 0);
         transition: transform 0.3s ease;
         z-index: 3;
     }
@@ -14,12 +14,9 @@
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
-    .content img{
-        display: none;
-    }
     .content a{
         color: black;
-        padding: 0;
+        padding: 12px;
     }
     .nav_item {
         display: list-item;
@@ -27,12 +24,27 @@
         width: 90%;
         text-align: left;
     }
+    #menu{
+        margin: 0;
+    }
+    .nav-responsive{
+        margin-left: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 602px) {
     .nav-responsive{
         display: none;
     }
 }
 
-/* daftar restoran */
-
+@media screen and (max-width: 300px) {
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .caption{
+        display: none;
+    }
+}
